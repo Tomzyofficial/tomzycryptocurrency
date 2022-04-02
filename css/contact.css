@@ -1,0 +1,123 @@
+a.active{
+    border: 1px solid transparent;
+    color: white;
+}
+a.active:hover{
+    transition: .5s;
+    color: lightgreen;
+}
+
+/* start header image */
+.text{
+    text-align: center;
+    color: #30336b;
+    padding-top: 100px;
+    font-weight: bold;
+}
+.text > h1{ font-size: 50px;}
+/* end header image */
+
+/* start contact information */
+#home, #phone, #envelope{
+    background: #ddd;
+    padding: 15px;
+    border-radius: 30px;
+    color: white;
+    font-size: 50px;
+}
+.location, .phone, .email{
+    background: #fefefe;
+    height: 50vh;
+    text-align: center;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    padding: 30px;
+    width: 20vw;
+    margin-top: 100px;
+}
+.location:hover, .phone:hover, .email:hover{
+    border-radius: 10px;
+    transition: 0.7s ease-in-out;
+}
+#footer-bg{
+    margin-top: 10rem;
+}
+/* end contact information */
+
+@media (max-width:668px){
+    .text{
+        padding-top: 80px;
+    }
+    .text > h1{font-size: 25px;}
+    .header-image{
+        height: 40vh;
+    }
+    .location, .phone, .email{
+        width: 15rem;
+        left: 30px;
+        height: 40vh;
+        padding: 25px;
+    }
+    #home, #phone, #envelope{
+        width: 4rem;
+        font-size: 20px;
+    }
+}
+@media (width: 768px){
+    .text > h1{
+        padding-top: 90px;
+    }
+    .location, .phone, .email{
+        width: 20rem;
+        left: 30px;
+        height: 40vh;
+        padding: 25px;
+    }
+}
+@media (width: 320px){
+    .location, .phone, .email{
+        left: 30px;
+        height: 40vh;
+        padding: 20px;
+    }
+}
+@media (width: 1024px){
+    .header-image{
+        height: 30vh;
+    }
+    .location, .phone, .email{
+        width: 15rem;
+        left: 30px;
+        height: 25vh;
+        padding: 25px;
+    }
+    #home, #phone, #envelope{
+        width: 4rem;
+        font-size: 20px;
+    }
+    .contain{
+        height: 30vh;
+    }
+}
+@media (height: 600px){
+    .location, .phone, .email{
+        width: 15rem;
+        left: 30px;
+        height: 45vh;
+        padding: 25px;
+    }
+}
+@media (width: 280px){
+    /* #mybtn{width: 11%;} */
+    .review > h2{
+        font-size: 15px;
+    }
+    .contain{
+        padding: 30px;
+    }
+    #mybtn{
+        width: 12%;
+    }
+    *{overflow-x: hidden;}
+}
