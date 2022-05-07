@@ -52,7 +52,7 @@ session_start();
        }
         /* overall site media query */
         @media  screen and   (max-width:1024px){
-            p{font-size: 25px;}
+            /* p{font-size: 25px;} */
             hr{display: none}
             /* #footer-bg{
                 margin-top: 330px;
@@ -63,7 +63,7 @@ session_start();
         }
         @media only screen and  (max-width:768px) {
             hr{display: none;}
-            p{font-size: 20px;}
+            /* p{font-size: 20px;} */
             /* #footer-bg{ margin-top: 150px;} */
         }   
         

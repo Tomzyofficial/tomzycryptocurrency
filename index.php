@@ -284,6 +284,7 @@ session_start();
     <script src="./bootstrap/jquery.counterup.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
     <script src="site-functions.js"></script>
+    <script src="counter.js"></script>
     <script>
         AOS.init({
         duration:1200,

@@ -23,14 +23,6 @@ $(document).ready(function(){
     });
 });
 
-// counter pluggin
-jQuery(document).ready(function( $ ) {
-    $('.counter').counterUp({
-    delay: 10,
-    time: 1000
-});
-});
-
 // back to top functions
     // get the button
      var mybutton = document.getElementById("mybtn");
@@ -44,13 +36,13 @@ jQuery(document).ready(function( $ ) {
          } else {
              mybutton.style.display="none";
          }
-     }
+     };
 
      //when the user clicks on the button, scrolls to the top of the page
      function topFunction(){
          document.body.scrollTop = 0;
          document.documentElement.scrollTop = 0;
-     }
+     };
     
 //faq 
 $(document).ready(function(){
@@ -89,7 +81,7 @@ $(document).ready(function(){
         $(".third-answer").hide();
         $(".fourth-answer").hide();
     });
-})
+});
 
 // footer year change
 let date = new Date().getFullYear();
