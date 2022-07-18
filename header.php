@@ -1,5 +1,7 @@
-
-
+<?php
+include 'includes/dbh.inc.php';
+include 'includes/sessions.inc.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,14 +22,15 @@
     <div class="container-fluid">
         <div class="login-box">
             <h2>Login Here</h2>
-            <form action="includes/login.inc.php" method="POST">
+            <?php echo errorMessage(); ?>
+            <form action="includes/logins.inc.php" method="POST">
                 <div class="form-group">
-                    <i class="fa fa-user-o"></i><input type="text" name="uid" placeholder="Username/e-mail" >
+                    <i class="fa fa-user-o"></i><input type="text" name="uid" placeholder="Username/e-mail"><br>
                 </div><br>
                 <div class="form-group">
-                    <i class="fa fa-lock"></i><input type="password" name="pwd" placeholder="Password">
+                    <i class="fa fa-lock"></i><input type="password" name="pwd" placeholder="Password"><br>
                 </div>
-                <button type="submit" class="btn btn-secondary" name="submit">Login</button>
+                <button type="submit" class="btn btn-success" name="submit">Login</button>
             </form>
             <div class="new-account">
                 <p>Don't have an account? <a href="signup.php" class="signup">SignUp </a></p>

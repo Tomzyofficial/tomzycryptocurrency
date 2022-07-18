@@ -1,3 +1,9 @@
+<?php
+include 'includes/dbh.inc.php';
+include 'includes/sessions.inc.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,9 +24,13 @@
     <div class="container-fluid-signup">
         <div class="signup-box">
             <h2>SignUp Here</h2>
+            <?php
+                echo errorMessage();
+                
+            ?>
             <form action="includes/signup.inc.php" method="POST">
                 <div class="form-group">
-                    <i class="fa fa-user"></i><input type="text" name="uid" placeholder="Username" >
+                    <i class="fa fa-user"></i><input type="text" name="uid" placeholder="Username">
                 </div><br>
                 <div class="form-group">
                 <i class="fa fa-envelope"></i><input type="email" name="email" placeholder="Email Address">
@@ -28,10 +38,10 @@
                 <div class="form-group">
                     <i class="fa fa-lock"></i><input type="password" name="pwd" placeholder="Password">
                 </div><br>
-                <button type="submit" name="submit" class="btn btn-secondary">SignUp</button>
+                <button type="submit" name="submit" class="btn btn-success">SignUp</button>
             </form>
             <div class="already_member">
-                <p>Already have an account?<a href="tip.php"> Login</a></p>
+                <p>Already have an account?<a href="login.php"> Login</a></p>
             </div>
         </div>
     </div>

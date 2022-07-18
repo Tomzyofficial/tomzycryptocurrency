@@ -1,7 +1,8 @@
 <?php
     session_start();
+    include 'include/sessions.inc.php';
     if(!isset($_SESSION['u_id'])){
-        header("Location: tip.php?pleaselogin");
+        header("Location: login.php?pleaselogin");
         exit();
     }
 ?>
@@ -20,9 +21,9 @@
     <script src="bootstrap/jquery-3.6.0.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
 
-   <script>
+   <!-- <script>
        alert("Please ensure to pay to the exact wallet to avoid loss of funds thanks!");
-   </script>
+   </script> -->
 </head>
 <body>
     <!-- start nav -->
@@ -65,9 +66,9 @@
             <div class="col-md-5" id="col">
                 <i class="fa fa-hand-pointer-o" aria-hidden="true" id="hand-pointer"><strong>step 1</strong></i>
                 <h6>copy our wallet address</h6>   
-                <p id="bitcoin" readonly></p>
-                <p id="eth" readonly></p>
-                <p id="bch" readonly></p>
+                <p id="bitcoin"></p>
+                <p id="eth"></p>
+                <p id="bch"></p>
                <button onclick="document.getElementById('bitcoin').innerHTML = 'bc1qwamm6fwqp7u2pt4qu7r9y5kpdsfp6ejmt0srg6'" class="btn-btc">Show BTC wallet</button>
                <button onclick="document.getElementById('eth').innerHTML = '0x518F1d28aD4c29147ca920dc9CFD6c1F12e4e6e4'" class="btn-eth">Show ETH wallet</button>
                <button onclick="document.getElementById('bch').innerHTML = 'qr3s4n907a287g8wrtvh8xf9vqs4puu8wuq8ttjchv'" class="btn-bch">Show BCH wallet</button>
@@ -94,54 +95,58 @@
     
     <!-- start payment form -->
     
-    <form action="include/process.php" method="POST">
+    <form action="include/processing.php" method="POST" enctype="multipart/form-data">
         <div class="container" style="padding-top: 300px;">
             <h5 class="text-center" style="margin-bottom: 20px;">Please fill in your data.</h5>
+            <?php 
+                echo errorMessage();
+                echo successMessage();
+            ?>
             <div class="row">
                 <div class="col-md-4">
                     <label for="fname">First Name<span style="color: red;">*</span></label>
-                    <input type="text" name="firstname" id="fname" class="form-control" required>
+                    <input type="text" name="firstname" id="fname" class="form-control">
                 </div>
                 <div class="col-md-4">
                     <label for="lname">Last Name<span style="color: red;">*</span></label>
-                    <input type="text" name="lastname" id="lname" class="form-control" required>
+                    <input type="text" name="lastname" id="lname" class="form-control">
                 </div>
                 <div class="col-md-4">
                     <label for="email">Email Address<span style="color: red;">*</span></label>
-                    <input type="email" name="email" id="email" placeholder="eg@gmail.com" class="form-control" required>
+                    <input type="email" name="email" id="email" placeholder="eg@gmail.com" class="form-control">
                 </div>
             </div>      
             <div class="row">
                 <div class="col-md-4">
                     <label for="phone-number">Phone Number<span style="color: red;">*</span></label>
-                    <input type="number" name="phoneNumber" id="phone-number" class="form-control" required>
+                    <input type="number" name="phoneNumber" id="phone-number" class="form-control">
                 </div>
                 <div class="col-md-4">
                     <label for="country">Country<span style="color: red;">*</span></label>
-                    <input type="text" name="country" id="country" class="form-control" required>
+                    <input type="text" name="country" id="country" class="form-control">
                 </div>
                 <div class="col-md-4">
                     <label for="state">State<span style="color: red;">*</span></label>
-                    <input type="text" name="state" id="state" class="form-control" required>
+                    <input type="text" name="state" id="state" class="form-control">
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4">
                     <label for="bank-number">Bank Acct No<span style="color: red;">*</span></label>
-                    <input type="number" name="bankNumber" id="bank-number" class="form-control" required>
+                    <input type="number" name="bankNumber" id="bank-number" class="form-control">
                 </div>
                 <div class="col-md-4">
                     <label for="bank-name">Bank Name<span style="color: red;">*</span></label>
-                    <input type="text" name="bankName" id="bank-name" class="form-control" required>
+                    <input type="text" name="bankName" id="bank-name" class="form-control">
                 </div>
                 <div class="col-md-4">
                     <label for="amount">Amount<span style="color: red;">*</span></label>
-                    <input type="number" name="amount" id="amount" placeholder="in dollars(don't put dollar sign)" class="form-control" required>
+                    <input type="number" name="amount" id="amount" placeholder="in dollars(don't put dollar sign)" class="form-control">
                 </div>
             </div>
             <div class="form-group" style="margin-top: 20px;">
                 <label for="exampleFormControlFile1">Upload screenshot<span style="color:red;">*</span></label><br>
-                <input type="file" class="form-control-file" name="fileUpload" id="exampleFormControlFile1" >
+                <input type="file" class="form-control-file" name="file" id="exampleFormControlFile1" >
             </div>
             <div class="form-check" style="margin-top: 20px;">
                 <input type="checkbox" class="form-check-input" name="checkBoxExample" id="check-box" checked>
@@ -153,7 +158,6 @@
     <!-- end payment form -->
 
     <!-- start footer -->
-
     <div class="footer">
         <!-- start main footer -->
         <div class="main-footer" id="footer-bg">

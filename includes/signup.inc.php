@@ -1,5 +1,6 @@
 <?php
 include 'dbh.inc.php';
+include 'sessions.inc.php';
 
 if(isset($_POST['submit'])){
 
@@ -10,17 +11,20 @@ if(isset($_POST['submit'])){
     //error handlers
     //check for empty fields
     if(empty($uid) || empty($email) || empty($pwd)){
-        header("Location: ../signup.php?signup=emptyfields");
+        $_SESSION["errorMessage"] = "All input field must be filled!";
+        header("Location: ../signup.php");
         exit();
     } else {
         //check if input characters are valid
-        if (!preg_match("/^[a-zA-Z0-9]*$/", $uid)) {
-            header("Location: ../signup.php?signup=invalid");
+        if (!preg_match("/^[a-zA-Z0-9 ]*$/", $uid)) {
+            $_SESSION["errorMessage"] = "Username must contain only alphabets and numbers!";
+            header("Location: ../signup.php");
             exit();
         } else {
             //check if email is valid
             if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                header("Location: ../signup.php?signup=invalidemail");
+                $_SESSION["errorMessage"] = "Invalid email address!";
+                header("Location: ../signup.php");
                 exit();
             } else {
                 $sql = "SELECT * FROM users WHERE user_uid = '$uid'";
@@ -28,7 +32,8 @@ if(isset($_POST['submit'])){
                 $resultCheck = mysqli_num_rows($result);
 
                 if ($resultCheck > 0) {
-                    header("Location: ../signup.php?signup=usernametaken");
+                    $_SESSION["errorMessage"] = "Username already taken choose another!";
+                    header("Location: ../signup.php");
                     exit(); 
                 } else {
                     //hashing the password
@@ -44,6 +49,6 @@ if(isset($_POST['submit'])){
     }
 
 } else {
-    header("Location: ../tip.php");
+    header("Location: ../signup.php");
     exit();
 }
