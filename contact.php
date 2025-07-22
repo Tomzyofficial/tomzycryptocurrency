@@ -15,7 +15,7 @@ session_start();
    <script src="./aos-master/dist/aos.js"></script>
     <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TomzyInstantPay - ContactPage</title>
+    <title>Contact Us | TomzyInstantPay</title>
     <script src="bootstrap/jquery-3.6.0.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
 </head>
@@ -34,8 +34,8 @@ session_start();
             <li><a href="faq.php">faq</a></li>
             <li>
                 <?php
-                    if(isset($_SESSION['u_id'])){
-                        echo ' <form action="include/logout.inc.php" method="POST">
+                    if(isset($_SESSION['user_name'])){
+                        echo ' <form action="includes/logout.inc.php" method="POST">
                                     <button type="submit" name="submit" id="logout">Logout</button>
                                 </form>';
                     }

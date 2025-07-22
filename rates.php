@@ -13,7 +13,7 @@ session_start();
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rates - TomzyInstantPay </title>
+    <title>Rates | TomzyInstantPay </title>
     <script src="bootstrap/jquery-3.6.0.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     
@@ -154,8 +154,8 @@ session_start();
             <li><a href="faq.php" class="contact-us">faq</a></li>
             <li>
                 <?php
-                    if(isset($_SESSION['u_id'])){
-                        echo ' <form action="include/logout.inc.php" method="POST">
+                    if(isset($_SESSION['user_name'])){
+                        echo ' <form action="includes/logout.inc.php" method="POST">
                                     <button type="submit" name="submit" id="logout">Logout</button>
                                 </form>';
                     }
@@ -186,21 +186,21 @@ session_start();
                     <th>BCH</th>
                 </tr>
                 <tr>
-                    <td><img src="./pictures/ng-flag.png" class="img-fluid rounded-circle" style="width: 30px; border-radius: 30%; height: 30px;" alt=""> NG</td>
+                    <td><img src="./images/ng-flag.png" class="img-fluid rounded-circle" style="width: 30px; border-radius: 30%; height: 30px;" alt="Nigeria flag"> NG</td>
                     <td>483/$</td>
                     <td>480/$</td>
                     <td>Depends</td>
                     <td>200/$</td>
                 </tr>
                 <tr>
-                    <td><img src="./pictures/GH.png" class="img-fluid rounded-circle" style="width: 30px; border-radius: 30%; height: 30px;" alt=""> GH</td>
+                    <td><img src="./images/GH.png" class="img-fluid rounded-circle" style="width: 30px; border-radius: 30%; height: 30px;" alt="Ghana flag"> GH</td>
                     <td>0.17/$</td>
                     <td>0.15/$</td>
                     <td>Depends</td>
                     <td>0.8/$</td>
                 </tr>
                 <tr>
-                    <td><img src="./pictures/SA-flag.png" class="img-fluid rounded-circle" style="width: 30px; border-radius: 30%; height: 30px;" alt=""> SA</td>
+                    <td><img src="./images/SA-flag.png" class="img-fluid rounded-circle" style="width: 30px; border-radius: 30%; height: 30px;" alt="South Africa flag"> SA</td>
                     <td>13.0/$</td>
                     <td>10/$</td>
                     <td>Depends</td>

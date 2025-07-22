@@ -20,7 +20,7 @@ if(isset($_GET['tomzyinstantpay'])) {
     <script src="./aos-master/dist/aos.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
-    <title>TomzyInstantPay - Privacy PolicyPage</title>
+    <title>Privacy Policy | TomzyInstantPay</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <script src="bootstrap/jquery-3.6.0.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
@@ -64,8 +64,8 @@ if(isset($_GET['tomzyinstantpay'])) {
             <li><a href="faq.php" class="contact-us">faq</a></li>
             <li>
                 <?php
-                    if(isset($_SESSION['u_id'])){
-                        echo ' <form action="include/logout.inc.php" method="POST">
+                    if(isset($_SESSION['user_name'])){
+                        echo ' <form action="includes/logout.inc.php" method="POST">
                                     <button type="submit" name="submit" id="logout">Logout</button>
                                 </form>';
                     }

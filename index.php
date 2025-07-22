@@ -40,8 +40,8 @@ session_start();
             <li><a href="faq.php" class="contact-us">faq</a></li>
             <li>
                 <?php
-                    if(isset($_SESSION['u_id'])){
-                        echo ' <form action="include/logout.inc.php" method="POST">
+                    if(isset($_SESSION['user_name'])){
+                        echo ' <form action="includes/logout.inc.php" method="POST">
                                     <button type="submit" name="submit" id="logout">Logout</button>
                                 </form>';
                     }
@@ -62,7 +62,7 @@ session_start();
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="./pictures/bg-img1.png" class="first-slider">
+                <img src="./images/bg-img1.png" class="first-slider" alt="Carousel image">
                 <div class="container">
                     <div class="carousel-caption text-start">
                         <h5 class="text-capitalize">TomzyInstantPay</h5>
@@ -71,7 +71,7 @@ session_start();
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="./pictures/bg-img2.png" class="sec-slider">
+                <img src="./images/bg-img2.png" class="sec-slider" alt="Carousel image">
                 <div class="container">
                     <div class="carousel-caption">
                         <h5 class="text-capitalize">TomzyInstantPay</h5>
@@ -107,15 +107,15 @@ session_start();
         <!-- start banner vectorimg -->
         <div id="banner-vectorImg" class="row">
             <div class="col-md-4" data-aos="fade-down">
-                <img class="img-fluid" src="pictures/cyberSecurity.png">
+                <img class="img-fluid" src="images/cyberSecurity.png" alt="Trusted and secure">
                 <p class="trusted">__Trusted and Secure</p>
             </div>
             <div class="col-md-4" data-aos="fade-up">
-                <img class="img-fluid" src="pictures/payment.png">
+                <img class="img-fluid" src="images/payment.png" alt="Fast payment image">
                 <p class="fast">__Fast Payment</p>
             </div>
             <div class="col-md-4" data-aos="fade-down">
-                <img class="img-fluid" src="pictures/beginnerFriend.png">
+                <img class="img-fluid" src="images/beginnerFriend.png" alt="Beginner friendly image">
                 <p class="beginner">__Beginner Friendly</p>
             </div>
         </div> 
@@ -189,7 +189,7 @@ session_start();
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <img class="thumb" src="pictures/about-sideImg.png" alt="">
+                    <img class="thumb" src="images/about-sideImg.png" alt="Side image for decor">
                 </div>
             </div>
         </div>

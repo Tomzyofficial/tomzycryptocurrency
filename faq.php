@@ -14,7 +14,7 @@ session_start();
     <script src="./aos-master/dist/aos.js"></script>
     <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TomzyInstantPay - FaqPage</title>
+    <title>FAQ | TomzyInstantPay</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <script src="bootstrap/jquery-3.6.0.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
@@ -93,8 +93,8 @@ session_start();
             <li><a href="faq.php" class="faq">faq</a></li>
             <li>
                 <?php
-                    if(isset($_SESSION['u_id'])){
-                        echo ' <form action="include/logout.inc.php" method="POST">
+                    if(isset($_SESSION['user_name'])){
+                        echo ' <form action="includes/logout.inc.php" method="POST">
                                     <button type="submit" name="submit" id="logout">Logout</button>
                                 </form>';
                     }
@@ -120,7 +120,7 @@ session_start();
         <div class="row details">
             <div class="col-lg-6">
                 <div class="img-content">
-                    <img src="pictures/img-faq.png" >
+                    <img src="images/img-faq.png" alt="FAQ image for decor">
                 </div>
             </div>
             <div class="col-lg-6">

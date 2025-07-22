@@ -1,10 +1,9 @@
 <?php
-    session_start();
-    include 'include/sessions.inc.php';
-    if(!isset($_SESSION['u_id'])){
-        header("Location: login.php?pleaselogin");
-        exit();
-    }
+  require_once 'includes/sessions.inc.php';
+  if(!isset($_SESSION['user_name'])){
+      header("Location: login.php?pleaselogin");
+      exit();
+  }
 ?>
 
 <!DOCTYPE html>
@@ -17,7 +16,7 @@
     <link rel="stylesheet" href="css/sell.css">
     <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sell - TomzyInstantPay</title>
+    <title>Sell | TomzyInstantPay</title>
     <script src="bootstrap/jquery-3.6.0.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
 
@@ -40,8 +39,8 @@
             <li><a href="faq.php" class="faq">faq</a></li>
             <li>
             <?php
-                if(isset($_SESSION['u_id'])){
-                    echo ' <form action="include/logout.inc.php" method="POST">
+                if(isset($_SESSION['user_name'])){
+                    echo ' <form action="includes/logout.inc.php" method="POST">
                                 <button type="submit" name="submit" id="logout">Logout</button>
                             </form>';
                 }
@@ -60,7 +59,7 @@
     <div class="container">
         <div class="column text-center">
             <h2>trade your cryptocurrency</h2>
-            <img class="swap" src="pictures/swap.png">
+            <img class="swap" src="images/swap.png" alt="Small icon for trading">
         </div>
         <div class="row">
             <div class="col-md-5" id="col">
@@ -95,7 +94,7 @@
     
     <!-- start payment form -->
     
-    <form action="include/processing.php" method="POST" enctype="multipart/form-data">
+    <form action="includes/processing.php" method="POST" enctype="multipart/form-data">
         <div class="container" style="padding-top: 300px;">
             <h5 class="text-center" style="margin-bottom: 20px;">Please fill in your data.</h5>
             <?php 
@@ -105,11 +104,11 @@
             <div class="row">
                 <div class="col-md-4">
                     <label for="fname">First Name<span style="color: red;">*</span></label>
-                    <input type="text" name="firstname" id="fname" class="form-control">
+                    <input type="text" name="fname" id="fname" class="form-control">
                 </div>
                 <div class="col-md-4">
                     <label for="lname">Last Name<span style="color: red;">*</span></label>
-                    <input type="text" name="lastname" id="lname" class="form-control">
+                    <input type="text" name="lname" id="lname" class="form-control">
                 </div>
                 <div class="col-md-4">
                     <label for="email">Email Address<span style="color: red;">*</span></label>
@@ -127,7 +126,7 @@
                 </div>
                 <div class="col-md-4">
                     <label for="state">State<span style="color: red;">*</span></label>
-                    <input type="text" name="state" id="state" class="form-control">
+                    <input type="text" name="states" id="state" class="form-control">
                 </div>
             </div>
             <div class="row">
@@ -145,11 +144,11 @@
                 </div>
             </div>
             <div class="form-group" style="margin-top: 20px;">
-                <label for="exampleFormControlFile1">Upload screenshot<span style="color:red;">*</span></label><br>
-                <input type="file" class="form-control-file" name="file" id="exampleFormControlFile1" >
+                <label for="upload">Upload screenshot<span style="color:red;">*</span></label><br>
+                <input type="file" class="form-control-file" name="file" id="upload">
             </div>
             <div class="form-check" style="margin-top: 20px;">
-                <input type="checkbox" class="form-check-input" name="checkBoxExample" id="check-box" checked>
+                <input type="checkbox" class="form-check-input" name="checkBox" id="check-box" checked>
                 <label for="check-box">I have read and agree to these terms and conditions.<a href="privacy.php?tomzyinstantpay=privacy&policy" class="terms-cons">View</a></label>
             </div>
             <button type="submit" name="submit" class="btn-default">Send your Order</button>

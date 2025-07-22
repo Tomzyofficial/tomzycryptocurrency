@@ -1,93 +1,99 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+.container-fluid {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../images/rocket.png");
+  height: 100vh;
+  width: 100%;
+}
+.login-box {
+  text-align: center;
+  transform: translateY(50%);
+}
+.login-box > h2 {
+  color: #f1f1f1;
+  font-weight: 600;
+  font-size: 2rem;
+}
+.login-box form {
+  padding-top: 50px;
+}
+i {
+  position: absolute;
+  line-height: 20px;
+  padding: 10px;
+  color: #f1f1f1;
+}
+input {
+  width: 20rem;
+  max-width: 20rem;
+  position: relative;
+  line-height: 20px;
+  height: 40px;
+  padding: 10px 30px;
+  font-weight: 500;
+  color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  background-color: transparent;
+}
+input:focus {
+  outline: none;
+}
+input::placeholder {
+  color: #f1f1f1;
+  font-weight: 500px;
+}
 
+button {
+  margin-top: 10px;
+  width: 100px;
 }
-.container-fluid{
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("../pictures/rocket.png");
-    height: 100vh;
-    width: 100%;
+.new-account {
+  color: #f1f1f1;
 }
-.login-box{
-   text-align: center;
-   transform: translateY(50%);
+.new-account .signup {
+  font-weight: 300;
+  text-decoration: none;
 }
-.login-box > h2{
-    color: #f1f1f1;
-    font-weight: 600;
-    font-size: 2rem;
-}
-.login-box form{
-    padding-top: 50px;
-}
-i{
-    position: absolute;
-    line-height: 20px;
-    padding: 10px;
-    color: #f1f1f1;
-}
-input{
-    width: 20rem;
-    max-width: 20rem;
-    position: relative;
-    line-height: 20px;
-    height: 40px;
-    padding: 10px 30px;
-    font-weight: 500;
-    color: #f1f1f1;
-    border: 1px solid #f1f1f1;
-    background-color: transparent;
-}
-input:focus{outline: none;}
-input::placeholder{
-    color: #f1f1f1;
-    font-weight: 500px;
-}
-
-button{
-   margin-top: 10px;
-   width: 100px;
-}
-.new-account{
-    color: #f1f1f1;
-}
-.new-account .signup{
-    font-weight: 300;
-    text-decoration: none;
-} 
 /* sign up css */
-.container-fluid-signup{
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("../pictures/desk.png");
-    height: 100vh;
-    width: 100%;
-
+.container-fluid-signup {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../images/desk.png");
+  height: 100vh;
+  width: 100%;
 }
-.signup-box form{
-    padding-top: 50px;
+.signup-box form {
+  padding-top: 50px;
 }
-.signup-box{
-    text-align: center;
-    transform: translateY(40%);
+.signup-box {
+  text-align: center;
+  transform: translateY(40%);
 }
-.signup-box > h2{
-    color: #f1f1f1;
-    font-weight: 600;
-    font-size: 2rem;
+.signup-box > h2 {
+  color: #f1f1f1;
+  font-weight: 600;
+  font-size: 2rem;
 }
-.already_member{
-    color: #f1f1f1;
+.form-group input:focus {
+  border: 1px solid green;
+  transition: border 0.5s;
 }
-.already_member a{
-    text-decoration: none;
+.already_member {
+  color: #f1f1f1;
+}
+.already_member a {
+  text-decoration: none;
 }
 
 /* ---------USER LOGIN/SIGNUP CSS-------- */
-.alert{
-    width: 50%;
-    padding: 0;
-    margin: 0 auto;
+.alert {
+  width: 50%;
+  padding: 0;
+  margin: 0 auto;
 }
