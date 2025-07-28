@@ -16,7 +16,7 @@ session_start();
     <title>Rates | TomzyInstantPay </title>
     <script src="bootstrap/jquery-3.6.0.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-    
+    <script src="scripts/rate.mjs" type="module" defer></script>
 
     <style>
         a.rates:visited{
@@ -176,41 +176,19 @@ session_start();
             <h2>fairest exchange rates</h2>
             <i class="fa fa-bolt fa-lg" aria-hidden="true"></i>
         </div>
-        <div class="grid">
-            <table data-aos="zoom-in">
-                <tr>
-                    <th>Country</th>
-                    <th>BTC</th>
-                    <th>ETH</th>
-                    <th>Giftcards</th>
-                    <th>BCH</th>
-                </tr>
-                <tr>
-                    <td><img src="./images/ng-flag.png" class="img-fluid rounded-circle" style="width: 30px; border-radius: 30%; height: 30px;" alt="Nigeria flag"> NG</td>
-                    <td>483/$</td>
-                    <td>480/$</td>
-                    <td>Depends</td>
-                    <td>200/$</td>
-                </tr>
-                <tr>
-                    <td><img src="./images/GH.png" class="img-fluid rounded-circle" style="width: 30px; border-radius: 30%; height: 30px;" alt="Ghana flag"> GH</td>
-                    <td>0.17/$</td>
-                    <td>0.15/$</td>
-                    <td>Depends</td>
-                    <td>0.8/$</td>
-                </tr>
-                <tr>
-                    <td><img src="./images/SA-flag.png" class="img-fluid rounded-circle" style="width: 30px; border-radius: 30%; height: 30px;" alt="South Africa flag"> SA</td>
-                    <td>13.0/$</td>
-                    <td>10/$</td>
-                    <td>Depends</td>
-                    <td>5/$</td>
-                   
-                </tr>       
-            </table>
-        </div>
+       <div>
+        <table>
+          <tr>
+            <th>Country</th>
+            <th>BTC</th>
+            <th>ETH</th>
+            <th>BCH</th>
+          </tr>
+
+        </table>
+      </div>
         <div class="scroll-left">
-            <p>1BTC = USD 36,525, 1ETH = USD 2,571, 1BCH = USD 624 </p>
+            <p id="prices"></p>
         </div>
         
     </div>
@@ -231,9 +209,9 @@ session_start();
                 <div class="col-md-3">
                     <h2 class="contact">contact us</h2>
                     <ul class="contact-drops">
-                        <li><p><i class="fa fa-phone fa-lg" style="color:rgba(104, 151, 167);"></i><span class="phone-number">+234 906 619 4749, <br> +1 (908) 409-1501</span></p></li>
+                        <li><p><i class="fa fa-phone fa-lg" style="color:rgba(104, 151, 167);"></i><span class="phone-number">+1 (908) 409-1501, <br> +1 (908) 409-1501</span></p></li>
                         <li><p><i class="fa fa-map-marker fa-lg" style="color:rgba(104, 151, 167);"></i><span class="address">Abuja, Nigeria</span></p></li>
-                        <li><p><i class="fa fa-envelope fa-lg" style="color:rgba(104, 151, 167);"></i><span class="email-to">tomzyofficial54@gmail.com</span></p></li>
+                        <li><p><i class="fa fa-envelope fa-lg" style="color:rgba(104, 151, 167);"></i><span class="email-to">tomzyofficial@gmail.com</span></p></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
@@ -255,7 +233,7 @@ session_start();
                 </div>
             </div>
             <div class="footer-copyright">
-                <p>&copy; TomzyInstantPay<span id="footer-year"></span> All Rights Reserved | <a href="privacy.php?tomzyinstantpay=privacy&policy">Privacy Policy</a</p>
+                <p>&copy; TomzyInstantPay<span id="footer-year"></span> All Rights Reserved | <a href="privacy.php?tomzyinstantpay=privacy&policy">Privacy Policy</a></p>
             </div>
         </div>
         <!-- end main footer -->
@@ -266,7 +244,7 @@ session_start();
         </div>
     </div>
 
-    <script src="site-functions.js"></script>
+    <script src="scripts/site-functions.js" defer></script>
     <!-- end back to top -->
 </body>
 <script>

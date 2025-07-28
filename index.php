@@ -246,9 +246,9 @@ session_start();
                 <div class="col-md-3">
                     <h2 class="contact">contact us</h2>
                     <ul class="contact-drops">
-                        <li><p><i class="fa fa-phone fa-lg" style="color:rgba(104, 151, 167);"></i><span class="phone-number">+234 906 619 4749, <br> +1 (908) 409-1501</span></p></li>
+                        <li><p><i class="fa fa-phone fa-lg" style="color:rgba(104, 151, 167);"></i><span class="phone-number">+1 (908) 409-1501, <br> +1 (908) 409-1501</span></p></li>
                         <li><p><i class="fa fa-map-marker fa-lg" style="color:rgba(104, 151, 167);"></i><span class="address">Abuja, Nigeria</span></p></li>
-                        <li><p><i class="fa fa-envelope fa-lg" style="color:rgba(104, 151, 167);"></i><span class="email-to">tomzyofficial54@gmail.com</span></p></li>
+                        <li><p><i class="fa fa-envelope fa-lg" style="color:rgba(104, 151, 167);"></i><span class="email-to">tomzyofficial@gmail.com</span></p></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
@@ -283,7 +283,7 @@ session_start();
     </div>
     <script src="./bootstrap/jquery.counterup.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-    <script src="site-functions.js"></script>
-    <script src="counter.js"></script>
+    <script src="scripts/site-functions.js" defer></script>
+    <script src="scripts/counter.js" defer></script>
 </body>
 </html>

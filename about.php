@@ -108,14 +108,11 @@ session_start();
                 <p>Why Our customers choose us</p>
             </div> 
             <div class="col-lg-6" id="write-up" data-aos="fade-up">
-                <p>At TomzyInstantPay, we are the most reliable, fastest and cheapest 
-                     e-currency exchanger since 2010. Customers can however sell their
-                    cryptocurrency and have the money from the sales sent to their bank account.
+                <p>At TomzyInstantPay, we’ve been the most reliable, fastest, and most affordable e-currency exchanger since 2010. Our customers can easily sell their cryptocurrency and receive payment directly into their bank accounts without delay
                 </p>
-                <p>We are a perfect cryptocurrency exchanger of repute and we pride ourselves
-                    to instantly fund cryptocurrency accounts for both small and large orders efficiently. 
+                <p>We are a reputable and trusted name in cryptocurrency exchange, known for instant payment of cryptocurrency for small or large orders—with unmatched efficiency. 
                 </p>
-                <p>We do not delay, we fund your cryptocurrency accounts instantly.</p>
+                <p>At TomzyInstantPay, there are no delays. We pay directly into your bank account upon confirmation of cryptocurrency—just as our name promises..</p>
             </div>
         </div>
     </div>
@@ -137,9 +134,9 @@ session_start();
                 <div class="col-md-3">
                     <h2 class="contact">contact us</h2>
                     <ul class="contact-drops">
-                        <li><p><i class="fa fa-phone fa-lg" style="color:rgba(104, 151, 167);"></i><span class="phone-number">+234 906 619 4749, <br> +1 (908) 409-1501</span></p></li>
+                        <li><p><i class="fa fa-phone fa-lg" style="color:rgba(104, 151, 167);"></i><span class="phone-number">+1 (908) 409-1501, <br> +1 (908) 409-1501</span></p></li>
                         <li><p><i class="fa fa-map-marker fa-lg" style="color:rgba(104, 151, 167);"></i><span class="address">Abuja, Nigeria</span></p></li>
-                        <li><p><i class="fa fa-envelope fa-lg" style="color:rgba(104, 151, 167);"></i><span class="email-to">tomzyofficial54@gmail.com</span></p></li>
+                        <li><p><i class="fa fa-envelope fa-lg" style="color:rgba(104, 151, 167);"></i><span class="email-to">tomzyofficial@gmail.com</span></p></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
@@ -171,7 +168,7 @@ session_start();
             <button onclick="topFunction()" id="mybtn"><i class="fa fa-chevron-up"></i></button>
         </div>
     </div>
-    <script src="site-functions.js"></script>
+    <script src="scripts/site-functions.js" defer></script>
     <script>
         AOS.init({
             duration:1200,
