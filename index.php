@@ -279,13 +279,14 @@ session_start();
             <button onclick="topFunction()" id="mybtn"><i class="fa fa-chevron-up"></i></button>
         </div>
     </div>
-    <script src="scripts/jquery.counterup.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
     <script src="scripts/site-functions.js" defer></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-    <script src="scripts/counter.js" defer></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // Animation on scroll plugin
+      AOS.init({
+        duration: 1200,
+      });
+    </script>
 </body>
 </html>
