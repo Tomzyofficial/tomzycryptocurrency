@@ -7,18 +7,13 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="./aos-master/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/contact.css"> -->
-    <link rel="stylesheet" href="./aos-master/dist/aos.css">
-    <script src="./aos-master/dist/aos.js"></script>
-    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/c91674d225.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ | TomzyInstantPay</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <script src="bootstrap/jquery-3.6.0.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <style>
         a.active{
             color: white;
@@ -192,11 +187,12 @@ session_start();
         </div>
     </div>
     <script src="scripts/site-functions.js" defer></script>
-
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
         duration: 1200,
         });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -11,10 +11,8 @@ include 'includes/sessions.inc.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="TomzyInstantPay">
     <title>TomzyInstantPay - LoginPage</title>
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <script src="bootstrap/jquery-3.6.0.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/c91674d225.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/signupLogin.css">
 </head>
 <body>
@@ -41,6 +39,7 @@ include 'includes/sessions.inc.php';
       </div>
     </div>
   </header>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
 

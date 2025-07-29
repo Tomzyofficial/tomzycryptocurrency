@@ -1,7 +1,7 @@
 //loader handler
 setTimeout(function () {
   $(".loader_bg").fadeToggle();
-}, 1000);
+}, 500);
 
 // navigation functions
 $(document).ready(function () {

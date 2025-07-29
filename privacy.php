@@ -16,14 +16,12 @@ if(isset($_GET['tomzyinstantpay'])) {
     <meta name="description" content="Bitcoin, Ethereum, Bitcoin Cash, Gift cards">
     <meta name="author" content="TomzyInstantPay">
     <meta name="keywords" content="TomzyInstantPay, Bitcoin, Ethereum, Bitcoin Cash, Gift cards">
-    <link rel="stylesheet" href="./aos-master/dist/aos.css">
-    <script src="./aos-master/dist/aos.js"></script>
     <link rel="stylesheet" href="css/style.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c91674d225.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
     <title>Privacy Policy | TomzyInstantPay</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <script src="bootstrap/jquery-3.6.0.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   
     <style>
         a.active{

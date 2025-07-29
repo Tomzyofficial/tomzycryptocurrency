@@ -10,15 +10,13 @@ session_start();
     <meta name="description" content="Bitcoin, Ethereum, Bitcoin Cash, Gift cards">
     <meta name="author" content="TomzyInstantPay">
     <meta name="keywords" content="TomzyInstantPay, Bitcoin, Ethereum, Bitcoin Cash, Gift cards">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./aos-master/dist/aos.css">
-    <script src="./aos-master/dist/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/c91674d225.js" crossorigin="anonymous"></script>
     <title>TomzyInstantPay - HomePage</title>
-    <script src="bootstrap/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    
 </head>
 <body>
     <!-- loader -->
@@ -281,9 +279,13 @@ session_start();
             <button onclick="topFunction()" id="mybtn"><i class="fa fa-chevron-up"></i></button>
         </div>
     </div>
-    <script src="./bootstrap/jquery.counterup.min.js"></script>
+    <script src="scripts/jquery.counterup.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
     <script src="scripts/site-functions.js" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <script src="scripts/counter.js" defer></script>
+
 </body>
 </html>
