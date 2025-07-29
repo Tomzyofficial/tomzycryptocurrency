@@ -78,14 +78,14 @@ session_start();
                 <div class="phone">
                     <i class="fa fa-phone" id="phone"></i>
                     <h3 style="margin-top: 50px; color: #535c68;">Phone</h3>
-                    <p style="color: #535c68;">+2349066194749</p>
+                    <p style="color: #535c68;">+1 (908) 409-1501</p>
                 </div>
             </div>
             <div class="col-lg-4">
                 <div class="email">
                     <i class="fa fa-envelope" id="envelope"></i>
                     <h3 style="margin-top: 50px; color: #535c68;">Email</h3>
-                    <p style="color: #535c68;">tomzyofficial54@gmail.com</p>
+                    <p style="color: #535c68;">tomzyofficial@gmail.com</p>
                 </div>
             </div>
         </div>
@@ -139,11 +139,6 @@ session_start();
     </div>
     <script src="scripts/site-functions.js" defer></script>
 
-    <script>
-        AOS.init({
-        duration: 1200,
-        });
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 
 </body>
